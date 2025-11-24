@@ -1,3 +1,5 @@
+package rvt;
+
 public class PaymentCard {
 
     private double balance;
