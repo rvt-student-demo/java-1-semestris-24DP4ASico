@@ -27,6 +27,7 @@ public class Grades {
         }else if(points<0){
             System.out.println("Impossible!");
         }
+        scanner.close();
     }
     
 }

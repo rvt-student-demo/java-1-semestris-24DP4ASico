@@ -41,6 +41,7 @@ public class JMArrayList {
             for (int i = startRange; i < endRange + 1; i++) {
                 System.out.println(numbers.get(i));
             }
+            scanner.close();
     }
     public static void listSize() {
         ArrayList<String> strings = new ArrayList<>();
@@ -53,6 +54,7 @@ public class JMArrayList {
                 break;
             }
             strings.add(input);
+            scanner.close();
         }
 
         System.out.println("Number of strings entered: " + strings.size());
@@ -68,6 +70,7 @@ public class JMArrayList {
                 break;
             }
             strings.add(input);
+            scanner.close();
         }
 
         System.out.print("Enter a string to search for: ");
@@ -87,5 +90,6 @@ public class JMArrayList {
             System.out.println(strings);
             System.out.println("Removed string: " + removedString);
         }
+        
     }
         }

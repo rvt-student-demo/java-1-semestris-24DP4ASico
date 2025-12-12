@@ -25,6 +25,7 @@ public class Delicatese {
         System.out.println("Prece: " + prece + " Cena:" + cena);
         System.out.println("Piegade: " + piegade);
         System.out.println("Kopa: " + kopa);
+        scanner.close();
         
     }
 

@@ -31,6 +31,7 @@ public class Details {
         System.out.println("Pasūtījums ir kārtībā.");
         }
         System.out.println("Kopējā cena: " + kopejaCena);
+        scanner.close();
     }
 }
     

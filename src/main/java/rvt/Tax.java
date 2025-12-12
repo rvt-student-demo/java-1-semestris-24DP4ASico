@@ -9,6 +9,7 @@ public class Tax {
         System.out.println("Enter price: ");
         int gift = scanner.nextInt();
         calculateTax(gift);
+        scanner.close();
     }
 
     public static double calculateTax(int gift){
@@ -31,6 +32,6 @@ public class Tax {
         System.out.println("Tax: " + tax);
         return tax;
 
-    }
-    
+    } 
 }
+

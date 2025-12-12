@@ -35,11 +35,13 @@ public class MainBooks{
       String inf = scanner.nextLine();
 
     for(Book book : books){
+
       if(inf.equals("everything")){
         System.out.println(book);
       } else if(inf.equals("name")){
         System.out.println(book.getTitle());
       }
     }
+    scanner.close();
   } 
 }

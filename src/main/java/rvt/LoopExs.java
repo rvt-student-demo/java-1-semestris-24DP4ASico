@@ -17,7 +17,7 @@ public class LoopExs {
         for (int i = num1; i <= num2; i++) {
             System.out.println(i);
         }
-
+        scanner.close();
     }
     
 }

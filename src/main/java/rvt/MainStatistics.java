@@ -31,5 +31,6 @@ public class MainStatistics {
         System.out.println("Sum: " + statisticsTotal.sum());
         System.out.println("Sum of even numbers: " + statisticsEven.sum());
         System.out.println("Sum of odd numbers: " + statisticsOdd.sum());
+        scanner.close();
     }
                            }

@@ -13,6 +13,6 @@ public class Average {
         System.out.println("Ievadiet trešo skaitli: ");
         Double sk3 = scanner.nextDouble();
         System.out.println("Videja arifmetiska trīm skaitļiem ir: " + (sk1 + sk2 + sk3)/3);
-
+scanner.close();
     }
 }
