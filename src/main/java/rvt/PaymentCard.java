@@ -3,13 +3,14 @@ package rvt;
 public class PaymentCard {
 
     private double balance;
-    private double money;
-    private int affordableMeals;
-    private int heartyMeals;
 
-    public PaymentCard(double openingBalance) {
-        this.balance = openingBalance;
+    public PaymentCard(double balance) {
+        this.balance = balance;
         
+    }
+
+    public double balance(){
+        return this.balance;
     }
 
     //public String toString() {

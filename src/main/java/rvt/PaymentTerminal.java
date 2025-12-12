@@ -4,10 +4,16 @@ public class PaymentTerminal {
     private double money;
     private int affordableMeals;
     private int heartyMeals;
-    private double balance;
     
     public PaymentTerminal(){
             this.money=1000;
+    }
+
+    public void addMoneyToCard(PaymentCard card, double sum) {
+        if(sum > 0){
+            this.money += sum;
+            card.addMoney(sum);
+        }
     }
         public double eatAffordably(double payment) {
             if (payment >= 2.50) {
@@ -30,20 +36,23 @@ public class PaymentTerminal {
       public String toString() {
          return "money: " + money + ", number of sold afforable meals: " + affordableMeals + ", number of sold hearty meals: " + heartyMeals;
      }
-     public boolean EatAffordably() {
-        if (this.balance >= 2.50) {
-            this.balance -= 2.50;
+     public boolean eataffordably(PaymentCard card) {
+        if (card.takeMoney(2.50)){
+            this.affordableMeals ++;
+            return true;
+            
+        }
+        return false;
+    }
+
+    public boolean eatheartily(PaymentCard card) {
+        if (card.takeMoney(4.30)){
+            this.heartyMeals ++;
             return true;
         }
         return false;
     }
 
-    public boolean EatHeartily() {
-        if (this.balance >= 4.30) {
-            this.balance -= 4.30;
-            return true;
-        }
-        return false;
-    }
+    
     
 }
